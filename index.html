@@ -4,7 +4,224 @@
     <meta charset="UTF-8">
     <title>درحال بروزرسانی</title>
 </head>
-<body>
-درحال بروزرسانی
+<style>
+    @font-face {
+        font-family: 'AdiHaus';
+        src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "AdiHaus";
+        src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Yekan';
+        src: url("fonts/yekan.woff2") format("truetype");
+        url('/fonts/yekan.woff2') format('woff2'),
+        url('/fonts/Yekan.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        text-rendering: optimizeLegibility;
+        font-display: auto;
+    }
+
+    body,html{
+        min-width:100%;
+        min-height:100vh;
+        font-family:Yekan;
+        margin:0;
+    }
+
+
+    @media only screen and (max-width:768px){
+
+
+        .all_content{
+            max-width:768px;
+            margin:0 auto;
+
+        }
+
+
+        #logo{
+            display:block;
+            margin:15px auto;
+        }
+
+
+        #girl_image{
+            width:100%;
+            height:250px;
+            background: blue url("img/bg.jpg") no-repeat right top;
+            background-size:cover;
+        }
+        .all_content_container{
+            padding:20px 30px;
+        }
+
+        .text_content_container{
+            width:100%;
+            text-align:center;
+        }
+
+        h2, p{
+            margin:0;
+        }
+
+        h2{
+            font-size:48px;
+            /*line-height:42px;*/
+            text-transform:uppercase;
+            letter-spacing:5px;
+        }
+        p{
+            margin:20px 0px 40px ;
+            /*font-size:14px;*/
+            line-height:28px;
+            color:#333333;
+        }
+
+        h2.red{
+            /*line-height:42px;*/
+            color:#CD3A24;
+            font-weight:400;
+            margin-bottom:10px;
+        }
+
+        h2.grey{
+            color:#423A3A;
+        }
+
+
+
+        form{
+            display:flex;
+        }
+
+        input[type="text"]{
+            width:75%;
+            padding:0px 20px;
+            box-sizing:border-box;
+            height:50px;
+
+            /* margin:15px 20px 25px;*/
+
+        }
+
+
+        input[type="submit"]{
+            width:20%;
+            box-sizing:border-box;
+            height:50px;
+            color:white;
+            background-color:black;
+            font-family:Yekan;
+            font-weight:700;
+            font-size:16px;
+            border:none;
+            /*  margin:0px -75px;*/
+
+        }
+
+
+    }
+    /*>>>>>>>>>>>>>>>>>>>>>>>Desktop version starts here<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+    @media only screen and (min-width:768px){
+
+
+        .all_content{
+            min-width:768px;
+            margin:3px auto;
+            font-family:Yekan;}
+
+
+        #logo{
+            display:inline;
+                margin:8% 0 0 16%;
+
+        }
+
+        #girl_image{
+            width:50%;
+            height:800px;
+            float:right;
+            background-image:url('img/bg.jpg');
+            background-repeat: no-repeat, no-repeat;
+            background-size:cover;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+        }
+
+        .red{
+            margin:8% 0 0 16%;
+            color:#CD3A24;
+            font-size:64px;
+            font-weight:400;
+            text-transform:uppercase;
+            letter-spacing:5px;
+        }
+        .grey{
+            margin:0 0 0 16%;
+            color:#423A3A;
+            font-size:71px;
+            text-transform:uppercase;
+            letter-spacing:5px;
+
+        }
+        p{
+            margin:2% 0 0  16%;
+        }
+        form{
+            margin:4% 0 0 16%;
+            display:flex;
+
+        }
+        input[type="text"]{
+            box-sizing:border-box;
+            height:56px;
+            font-family:Yekan;
+            font-size:16px;
+            width:75%;
+            padding:0px 30px;
+
+
+        }
+        input[type="submit"]{
+            height:56px;
+            color:white;
+            width:20%;
+            font-family: Yekan;
+            background-color:black;
+            border:none;
+            font-size:18px;
+            font-weight:700;
+        }
+    }
+</style>
+<body dir="rtl" lang="fa">
+
+<div class="all_content" dir="ltr">
+    <img id="logo" src="img/logo-01.png" width="200px">
+    <div dir="ltr" id="girl_image">
+    </div>
+    <div class="all_content_container">
+        <div class="text_content_container">
+            <h2 class="red" dir="ltr">We're</h2>
+            <h2 class="grey" dir="ltr">Coming Soon</h2>
+            <p dir="rtl">سلام دوستان! ما در حال حاضر در حال ساخت وب سایت جدید آژانس گسترس تبلیغات دیجیتال <B>آمین</B> هستیم. آدرس ایمیل خود را در زیر وارد کنید تا از اطلاعیه‌ها و پیشنهادات راه‌اندازی ما مطلع شوید.</p>
+        </div>
+
+        <form id="email_button" action="https://aminads.ir/" dir="rtl">
+            <input type="Submit" value="ثبت" name="ثبت">
+            <input type="text" id="email" name="email" placeholder="آدرس ایمیل">
+        </form>
+
+    </div>
+</div>
+
 </body>
 </html>
